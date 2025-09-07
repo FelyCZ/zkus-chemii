@@ -27,6 +27,7 @@ const currentRoute = computed(() => {
   </UApp>
 </template>
 
+<!--suppress CssUnusedSymbol -->
 <style scoped>
 .page-enter-active,
 .page-leave-active {
