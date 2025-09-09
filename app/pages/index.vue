@@ -1,3 +1,4 @@
+<!--suppress HtmlUnknownTarget -->
 <script setup lang="ts">
 
 const { hero, sections } = useIndex()
