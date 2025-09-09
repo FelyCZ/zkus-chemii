@@ -28,11 +28,11 @@ const { hero, sections } = useIndex()
 
           >
             <div
-                v-for="(card, i) in sections"
+                v-for="(section, i) in sections"
                 :key="i"
             >
               <NuxtLink
-                  :to="card.link"
+                  :to="section.link"
                   prefetch-on="visibility"
               >
                 <UCard
@@ -43,16 +43,16 @@ const { hero, sections } = useIndex()
                 }"
                 >
                   <template #header>
-                    <UIcon :name="card.icon" size="30" class="text-secondary"/>
+                    <UIcon :name="section.icon" size="30" class="text-secondary"/>
                     <p class="text-xl font-bold pb-[-2]">
-                      {{ card.title }}
+                      {{ section.title }}
                     </p>
                   </template>
                   <template #default>
                     <div class="flex flex-col gap-y-2">
 
                       <p class="text-lg font-semibold text-muted">
-                        {{ card.subtitle }}
+                        {{ section.subtitle }}
                       </p>
 
                     </div>
@@ -64,10 +64,10 @@ const { hero, sections } = useIndex()
                         trailing-icon="i-lucide-arrow-right"
                         class="w-full justify-center text-center hover:scale-105 transition-all"
                         size="xl"
-                        :to="card.link"
+                        :to="section.link"
                         color="secondary"
                     >
-                      {{ card.action }}
+                      {{ section.action }}
                     </UButton>
                   </template>
                 </UCard>
