@@ -9,7 +9,11 @@
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
     "lint": "eslint --ext .ts,.js,.vue --ignore-path .gitignore .",
-    "lint-fiter": "eslint --ext .ts,.js,.vue --ignore-path .gitignore . --fix"
+    "lint-fiter": "eslint --ext .ts,.js,.vue --ignore-path .gitignore . --fix",
+    "build-cloudflare": "npx nuxi build --preset=cloudflare_pages",
+    "deploy-cloudflare": "npx wrangler pages deploy --project-name=zkus-chemii dist/ --commit-dirty=true",
+    "deploy": "bun run build-cloudflare && bun run deploy-cloudflare --branch=main",
+    "deploy-prod": "bun run build-cloudflare && bun run deploy-cloudflare --branch=production"
   },
   "dependencies": {
     "@nuxt/eslint": "1.9.0",
