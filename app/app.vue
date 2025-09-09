@@ -1,19 +1,24 @@
 <script setup lang="ts">
-const currentRoute = computed(() => {
-  return useRoute().name
+const isIndexPage = computed(() => {
+  return useRoute().name === 'index'
 })
 </script>
 
 <template>
   <UApp>
     <UHeader
-      :title="currentRoute !== 'index' ? 'Zkus chemii' : ''"
+        title=""
       :ui="{
         toggle: 'hidden',
-        title: 'bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent'
+        title: 'bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent flex flex-row items-center gap-2 hover:text-primary hover:scale-105 transition-all'
       }"
       :toggle="false"
     >
+      <template v-if="!isIndexPage" #title>
+        <UIcon name="i-lets-icons-flask-light" size="30" class="text-primary"/>
+        Zkus chemii!
+      </template>
+
       <template #right>
         <UColorModeButton />
       </template>
