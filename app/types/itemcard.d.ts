@@ -1,8 +1,10 @@
 export interface ItemCardData {
     title: string;
+    subtitle?: string;
     description: string;
     imgSrc: string;
-    link: string;
-    icon: string;
-    color?: string;
+    links: string;
+    badges: string[];
+    highlighted?: boolean;
+    section: string;
 }

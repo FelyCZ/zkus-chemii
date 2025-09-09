@@ -1,5 +1,6 @@
 <script setup lang="ts">
 const toast = useToast()
+const { badges } = useBadges()
 
 defineProps({
   data: {
@@ -9,8 +10,7 @@ defineProps({
 });
 
 const excludedLinks = [
-    "https://www.bestvina.cz/",
-    "/link"
+  "http://www.bestvina.cz/",
 ];
 
 function onClickMain(link: string) {
@@ -33,56 +33,84 @@ function onClickMain(link: string) {
 <template>
   <UCard
       class="border-primary/20 border"
-    :ui="{
+      :ui="{
       footer: 'w-full',
-      root: 'bg-radial-[at_45%_45%] via-transparent to-emerald-500/5'
+      body: 'flex-grow h-full',
+      header: 'p-4 pb-0',
+      root: `flex flex-col justify-between bg-radial-[at_45%_45%] via-transparent ${!data.highlighted ? 'to-secondary/10' : 'to-primary-500/20'} hover:scale-105 transition-all`
     }"
   >
     <template #header>
       <NuxtImg
           v-slot="{ src, isLoaded, imgAttrs }"
           :src="data.imgSrc"
-          alt="image"
           class="w-full"
-          width="400"
-          fit="cover"
+          preset="cardImage"
           :custom="true"
       >
-        <div class="w-full aspect-[3/2] rounded-md shadow-lg">
           <!-- Show the actual image when loaded -->
-          <img
+          <div
               v-if="isLoaded"
-              v-bind="imgAttrs"
-              class="object-cover aspect-[3/2] rounded-md"
-              :src="src"
-              alt="fotografie k {{data.title}}"
           >
+            <img
+                v-bind="imgAttrs"
+                class="object-cover w-full aspect-[3/2] rounded-md shadow-lg"
+                :src="src"
+                loading="lazy"
+                :alt="'fotografie k ' + data.title"
+            >
+            <div class="text-center text-sm text-muted h-12 flex items-center justify-center">
+              <p>
+                zdroj: {{ data.imgCaption }}
+                <span v-if="data.imgCaptionLink" class="ml-1">
+                 [<ULink
+
+                    class="underline"
+                    :href="data.imgCaptionLink">odkaz</ULink>]
+              </span>
+              </p>
+            </div>
+          </div>
+
 
           <!-- Show a placeholder while loading -->
           <USkeleton
               v-else
-              src="https://placehold.co/400x400"
-              class="object-cover aspect-[3/2] rounded-md"
+              class="object-cover aspect-[3/2] rounded-md mb-4"
               alt="skeleton během načítání"
-          /></div>
+          />
       </NuxtImg>
     </template>
 
     <template #default>
       <div class="flex flex-col gap-y-2">
 
-        <h2 class="text-2xl font-bold text-highlighted">
-          {{data.title}}
+        <h2 class="text-2xl font-bold text-highlighted pb-[-2]">
+          {{ data.title }}
         </h2>
+        <p v-if="data.subtitle != undefined" class="text-md font-semibold text-muted">
+          {{ data.subtitle }}
+        </p>
+
+        <div class="flex flex-row flex-wrap gap-2">
+          <UBadge
+              v-for="(badge,i) in data.badges"
+              :key="i"
+              class="font-bold rounded-full px-3"
+              variant="outline"
+              color="secondary"
+          >{{ badges.find(b => b.id === badge)?.title }}
+          </UBadge>
+        </div>
 
         <p class="text-neutral">
-          {{data.description}}
+          {{ data.description }}
         </p>
       </div>
     </template>
 
-    <template #footer>
-      <div class="flex flex-row gap-2 justify-end-safe">
+    <template v-if="!data.highlighted" #footer>
+      <div class="flex flex-row flex-wrap gap-2 justify-end-safe">
         <UButton
             v-for="(link, i) in data.links"
             :key="i"
