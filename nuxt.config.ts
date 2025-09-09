@@ -21,7 +21,12 @@ export default defineNuxtConfig({
         },
     },
     ssr: true,
+    site: {
+        url: 'https://zkus-chemii.pages.dev',
+        name: 'Zkus Chemii!'
+    },
     image: {
+        dir: 'assets',
         presets: {
             cardImage: {
                 modifiers: {
