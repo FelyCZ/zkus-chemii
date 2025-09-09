@@ -1,7 +1,8 @@
-<!--suppress HtmlUnknownTarget -->
+<!--suppress HtmlUnknownTarget, HttpUrlsUsage -->
 <script setup lang="ts">
 const toast = useToast()
 const { badges } = useBadges()
+const router = useRouter()
 
 defineProps({
   data: {
@@ -21,10 +22,19 @@ function onClickMain(link: string) {
   if (link == excludedLinks[0]) {
     toast.add({
       title: 'Jejda!',
-      description: 'Webové stránky soustředění Běstvina jsou aktuálně nefunkční a nové jsou teprve v přípravě. Pokud tě zajímá cokoli ohledně Běstviny, ozvi se mi přes email:\ntodo@todo.cz',
+      description: 'Webové stránky soustředění Běstvina jsou aktuálně nefunkční a nové jsou teprve v přípravě. Pokud tě zajímá cokoli ohledně Běstviny, ozvi se mi...',
       color: 'error',
       icon: 'i-proicons-skull',
-      progress: false
+      progress: false,
+      actions: [{
+        icon: 'i-lucide-contact',
+        label: 'Kontakt',
+        color: 'info',
+        variant: 'outline',
+        onClick: async (_e) => {
+          await navigateTo("/kontakt")
+        }
+      }]
     });
   }
 }
