@@ -10,4 +10,4 @@ soutředěních a jiných akcích se zaměřením na chemii.
 
 ## Autoři
 * Andrea Slívová - nápad a obsah
-* Jakub Ferenčík [FelyCZ](https://github.com/FelyCZ/) - design a kód
+* Jakub Ferenčík [[FelyCZ](https://github.com/FelyCZ/)] - design a kód
