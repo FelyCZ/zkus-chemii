@@ -43,7 +43,7 @@ const isIndexPage = computed(() => {
         <UButton
             to="/seznam"
             variant="link"
-            icon="i-lucide-list"
+            icon="i-lucide-rocket"
             color="neutral">
           Seznam aktivit
         </UButton>
@@ -55,7 +55,7 @@ const isIndexPage = computed(() => {
           Kontakt
         </UButton>
       </div>
-      <div class="w-full text-center flex flex-row items-center justify-center py-4 bg-secondary/20">
+      <div class="w-full text-center flex flex-row items-center justify-center py-4 bg-secondary/10 text-sm text-muted">
         <span>
           Zdrojový kód je dostupný na
         </span>
