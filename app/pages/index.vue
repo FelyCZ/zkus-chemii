@@ -1,35 +1,81 @@
 <script setup lang="ts">
 
-const title = "Zkus chemii!"
-const descritpion = "Jsi připravený na chemické dobrodružství? Vydej se s námi na výlety a soustředění," +
-    " kde se chemie stane součástí tvého života. Poznej nové kamarády, " +
-    "se kterými budeš řešit zapeklité úkoly a objevovat svět kolem sebe. " +
-    "Tvá chemická cesta právě začíná. Přidej se k nám!"
+const { hero, sections } = useIndex()
+
 </script>
 
 <template>
   <UPage>
     <UMain>
-      <div class="flex flex-col justify-center items-center">
+      <div class="flex flex-col justify-center items-center mb-24">
         <div class="w-4/5 md:w-2/3">
           <UPageHero
-              :title="title"
-              :description="descritpion"
+              :title="hero.title"
+              :description="hero.descritpion"
               headline=""
-              :links="[{
-                label: 'Přejít na seznam',
-                to: '/seznam',
-                icon: 'i-lucide-rocket',
-                color: 'secondary',
-              },]"
+              :links="hero.links"
               :ui="{
                 title: 'bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent'
               }"
           >
             <template #headline>
-              <UIcon name="i-lets-icons-flask-light" size="100" class="text-primary" />
+              <UIcon name="i-lets-icons-flask-light" size="100" class="text-primary"/>
             </template>
           </UPageHero>
+
+          <UPageGrid
+             class="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3"
+
+          >
+            <div
+                v-for="(card, i) in sections"
+                :key="i"
+            >
+              <NuxtLink
+                  :to="card.link"
+                  prefetch-on="visibility"
+              >
+                <UCard
+                    :ui="{
+                  root: 'h-full flex flex-col bg-radial-[at_30%_0%] via-transparent to-secondary/10 hover:scale-105 transition-all',
+                  body: 'flex-grow',
+                  header: 'flex flex-row gap-2 items-center',
+                }"
+                >
+                  <template #header>
+                    <UIcon :name="card.icon" size="30" class="text-secondary"/>
+                    <p class="text-xl font-bold pb-[-2]">
+                      {{ card.title }}
+                    </p>
+                  </template>
+                  <template #default>
+                    <div class="flex flex-col gap-y-2">
+
+                      <p class="text-lg font-semibold text-muted">
+                        {{ card.subtitle }}
+                      </p>
+
+                    </div>
+                  </template>
+
+                  <template #footer>
+                    <UButton
+                        variant="link"
+                        trailing-icon="i-lucide-arrow-right"
+                        class="w-full justify-center text-center hover:scale-105 transition-all"
+                        size="xl"
+                        :to="card.link"
+                        color="secondary"
+                    >
+                      {{ card.action }}
+                    </UButton>
+                  </template>
+                </UCard>
+              </NuxtLink>
+            </div>
+
+
+          </UPageGrid>
         </div>
       </div>
 
