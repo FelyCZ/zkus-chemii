@@ -31,7 +31,7 @@ export default defineNuxtConfig({
             cardImage: {
                 modifiers: {
                     format: "jpg",
-                    width: 400,
+                    width: 800,
                     quality: 50,
                     fit: "cover"
                 }

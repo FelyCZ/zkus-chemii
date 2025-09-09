@@ -10,7 +10,7 @@ export default function useCards() {
             description: "Chceš se zkusit věnovat chemii? Začni Chemickou olympiádou! " +
                 "Je ideální pro každého, kdo se chce dozvědět o chemii nad rámec výuky ve škole, " +
                 "vyzkoušet si zajímavé laboratorní úlohy a poměřit síly s ostatními studenty z celé České republiky.",
-            imgSrc: "/img/cho.jpg",
+            imgSrc: "/image/cho.jpg",
             imgCaption: "Chemická olympiáda, národní kolo 2025",
             imgCaptionLink: "",
             links: [
@@ -30,7 +30,7 @@ export default function useCards() {
             subtitle: "Korespondenční seminář inspirovaný chemickou tematikou",
             description: "Jenom další test z chemie? Ani náhodou! KSICHT ti přináší zapeklité chemické úlohy přímo do obýváku. " +
                 "Vyřeš je, získej body a za odměnu tě čekají společné výlety nebo letní soustředění plné experimentů a nových přátel.",
-            imgSrc: "/img/ksicht.jpg",
+            imgSrc: "/image/ksicht.jpg",
             imgCaption: "KSICHT, soustředění 2023",
             imgCaptionLink: "",
             links: [
@@ -50,7 +50,7 @@ export default function useCards() {
             subtitle: "Vzdělávací ikurz pro budoucí chemiky",
             description: "Chceš se dozvědět o aktuálních tématech chemického výzkumu? ViBuCh je přesně pro tebe! " +
                 "Korespondenční seminář od MUNI plný úloh, které tě budou bavit, a na závěrečném soustředění si všechno vyzkoušíš na vlastní kůži.",
-            imgSrc: "/img/vibuch.jpg",
+            imgSrc: "/image/vibuch.jpg",
             imgCaption: "ViBuCh",
             imgCaptionLink: "https://vibuch.sci.muni.cz/",
             links: [
@@ -70,7 +70,7 @@ export default function useCards() {
             description: "Sestav tým a rozjeď to! Chemiklání je rychlá, týmová soutěž mozků z Česka i Slovenska. " +
                 "Čekají vás netradiční úlohy, kde rozhodují nejen znalosti, ale i selský rozum, strategie a spolupráce. " +
                 "Žádná nadšená parta se soutěživým duchem se tu rozhodně neztratí!",
-            imgSrc: "/img/chemiklani_2.jpg",
+            imgSrc: "/image/chemiklani.jpg",
             imgCaption: "Chemiklání",
             imgCaptionLink: "",
             links: [
@@ -90,7 +90,7 @@ export default function useCards() {
             description: "Ukaž svoji kreativitu! Navrhni a zrealizuj atraktivní experiment na zadané téma, " +
                 "natoč krátké video a nech odbornou porotu i veřejnost rozhodnout. " +
                 "Ti nejúspěšnější pak dostanou příležitost svůj pokus předvést naživo ve finále na VŠCHT v Praze. ",
-            imgSrc: "/img/chemquest.jpeg",
+            imgSrc: "/image/chemquest.jpeg",
             imgCaption: "VŠCHT, ChemQuest",
             imgCaptionLink: "https://www.vscht.cz/spoluprace/skoly/pro-zaky/chemquest",
             links: [
@@ -106,10 +106,10 @@ export default function useCards() {
             section: "souteze",
         },
         {
-            title: "Fotosoutěž Svět (je) chemie",
+            title: "Svět (je) chemie",
             description: "Máš umělecký cit, originální nápady a smysl pro detail? " +
                 "Podívej se na svět kolem sebe hledáčkem chemie a pokus se ji zachytit fotografií!",
-            imgSrc: "/img/fotosoutez.jpg",
+            imgSrc: "/image/fotosoutez.jpg",
             imgCaption: "Archiv VŠCHT Praha",
             imgCaptionLink: "",
             links: [
@@ -128,7 +128,7 @@ export default function useCards() {
             title: "ChemMasters",
             description: "Středoškolská únikovka ChemMasters tě vtáhne do hry plné úkolů a prověří rychlost a týmovou spolupráci. " +
                 "Sestav tým, vymysli originální název a přijeď se s ostatními školami utkat o vítězství!",
-            imgSrc: "/img/chemmasters.jpg",
+            imgSrc: "/image/chemmasters.jpg",
             imgCaption: "Archiv VŠCHT Praha",
             imgCaptionLink: "",
             links: [
@@ -149,7 +149,7 @@ export default function useCards() {
             description: "Máš v hlavě vlastní nápad na experiment nebo projekt? " +
                 "SOČka je tvoje šance ho proměnit ve skutečnost! " +
                 "Ponoř se do světa opravdové vědy, získej cenné zkušenosti z praxe a ohrom porotu svým vlastním výzkumem.",
-            imgSrc: "/img/soc.jpg",
+            imgSrc: "/image/soc.jpg",
             imgCaption: "SOČ, 47. CP v Teplicích",
             imgCaptionLink: "https://www.soc.cz/fotogalerie-ze-47-cp-soc-v-teplicich/",
             links: [
@@ -168,7 +168,7 @@ export default function useCards() {
             title: "Otevřená věda",
             description: "Přestaň o vědě jen číst a začni ji dělat! Program Otevřená věda ti umožní stát se na rok " +
                 "součástí skutečného vědeckého týmu v Akademii věd. Získej praxi, která ti změní život a rozšíří obzory.",
-            imgSrc: "/img/otevrena_veda.jpg",
+            imgSrc: "/image/otevrena_veda.jpg",
             imgCaption: "Otevřená věda",
             imgCaptionLink: "https://www.otevrenaveda.cz/cs/staze-pro-studenty/bud-hrdinou-sve-doby/",
             links: [
@@ -188,7 +188,7 @@ export default function useCards() {
             description: "Zkoušet nové věci někdy není jednoduché, ale vždycky to stojí za to. " +
                 "Chemie nabízí víc než jenom soutěže a organizované akce, " +
                 "stačí mít odvahu se zeptat a dát svým nápadům šanci. Co za příležitost si vytvoříš ty?",
-            imgSrc: "/img/vlastni_cesta.jpg",
+            imgSrc: "/image/vlastni_cesta.jpg",
             imgCaption: "Archiv VŠCHT Praha",
             imgCaptionLink: "",
             links: [
@@ -208,7 +208,7 @@ export default function useCards() {
             description: "Nejlepší letní prázdniny pro chemiky? Jedině Běstvina! " +
                 "Čekají tě dva týdny v přírodě nabité přednáškami i experimenty, zábavou, " +
                 "a hlavně partou lidí, kteří jsou do chemie stejně zapálení jako ty.",
-            imgSrc: "/img/bestvina.jpg",
+            imgSrc: "/image/bestvina.jpg",
             imgCaption: "LOS Běstvina 2025",
             imgCaptionLink: "",
             links: [
@@ -233,7 +233,7 @@ export default function useCards() {
                 "a posluchárny stovek vědeckých budov otevřou široké veřejnosti. " +
                 "Čekají tě velkolepé experimenty, interaktivní workshopy a možnost " +
                 "nahlédnout tam, kam se normálně nedostaneš.",
-            imgSrc: "/img/noc_vedcu.jpg",
+            imgSrc: "/image/noc_vedcu.jpg",
             imgCaption: "Noc vědců",
             imgCaptionLink: "https://www.nocvedcu.cz/o-akci",
             links: [
@@ -252,7 +252,7 @@ export default function useCards() {
             title: "VědaFest",
             description: "VědaFest spojuje nadšení pro vědu s interaktivními workshopy, přednáškami " +
                 "a pokusy pro všechny generace. Poznej rozmanitý svět vědy a bav se!",
-            imgSrc: "/img/vedafest.jpg",
+            imgSrc: "/image/vedafest.jpg",
             imgCaption: "Archiv VŠCHT Praha",
             imgCaptionLink: "",
             links: [
@@ -271,7 +271,7 @@ export default function useCards() {
             title: "Veletrh vědy",
             description: "Chceš vidět budoucnost na vlastní oči? Veletrh vědy ti ukáže to nejlepší z českého výzkumu. " +
                 "Roboti, lasery, nové materiály a spousta interaktivních exponátů, které si můžeš osahat.",
-            imgSrc: "/img/veletrh_vedy.jpg",
+            imgSrc: "/image/veletrh_vedy.jpg",
             imgCaption: "Veletrh Vědy",
             imgCaptionLink: "https://www.veletrhvedy.cz/cs/press/",
             links: [
@@ -290,7 +290,7 @@ export default function useCards() {
             title: "Dny vědy a techniky",
             description: "V pátek 19. září 2025 tě na náměstí Republiky v Plzni budou čekat vědci a vědkyně ze Západočeské univerzity. " +
                 "Je připraven nabitý program, tak neváhej a přijď zažít vědu na vlastní kůži!",
-            imgSrc: "/img/zcu_dvt.jpg",
+            imgSrc: "/image/zcu_dvt.jpg",
             imgCaption: "ZČU, Dny vědy a techniky 2025",
             imgCaptionLink: "https://dnyvedy.zcu.cz/fotogalerie/",
             links: [
@@ -309,7 +309,7 @@ export default function useCards() {
             title: "GoHigher",
             description: "Nevíš, co vyzkoušet? Nejsi v tom sám. GoHigher je nejen tvůj rozcestník do světa příležitostí, " +
                 "ale hlavně komunita nadaných a aktivních studentů. Spoj se s ostatními a společně využijte svůj potenciál!",
-            imgSrc: "/img/gohigher_2.jpg",
+            imgSrc: "/image/gohigher_2.jpg",
             imgCaption: "GoHigher, Café#4 2024",
             imgCaptionLink: "https://www.podporatalentu.cz/fotogalerie/cafe4-7-3-2024/",
             links: [
@@ -332,7 +332,7 @@ export default function useCards() {
             subtitle: "Vysoká škola chemicko-technologická v Praze",
             description: "Chceš chemii nejen studovat, ale doopravdy dělat? VŠCHT je místo, kde se teorie okamžitě mění v praxi. " +
                 "Ať už tě láká vaření piva, vývoj léků nebo nanotechnologie, tady tě připraví na reálnou kariéru.",
-            imgSrc: "/img/vscht.jpg",
+            imgSrc: "/image/vscht.jpg",
             imgCaption: "Archiv VŠCHT Praha",
             imgCaptionLink: "",
             links: [
@@ -352,7 +352,7 @@ export default function useCards() {
             description: "Toužíš po objevech, které mění svět? PřF UK v Praze je ideální pro budoucí vědce, " +
                 "kteří chtějí jít za hranice probádaného světa. " +
                 "Čeká tě špičkový výzkum, hlavně v oblasti biochemie a medicinální chemie.",
-            imgSrc: "/img/prf_uk.jpg",
+            imgSrc: "/image/prf_uk.jpg",
             imgCaption: "PřF UK, Petr Jan Juračka",
             imgCaptionLink: "",
             links: [
@@ -371,7 +371,7 @@ export default function useCards() {
             subtitle: "Masarykova univerzita v Brně",
             description: "Láká tě věda v té nejmodernější podobě? Vítej na MUNI! " +
                 "Moderní kampus, mezioborovost a inovativní prostředí. Tady se tvoří budoucnost.",
-            imgSrc: "/img/muni.jpg",
+            imgSrc: "/image/muni.jpg",
             imgCaption: "SCI MUNI",
             imgCaptionLink: "https://www.sci.muni.cz/o-nas",
             links: [
@@ -390,7 +390,7 @@ export default function useCards() {
             subtitle: "Fakulta chemicko-technologická Univerzity Pardubice",
             description: "Hledáš chemii s osobnějším přístupem? Pardubice jsou víc než jen 'dvojka' po VŠCHT. " +
                 "Najdeš tu moderní vybavení, unikátní obory a komunitu, kde se neztratíš.",
-            imgSrc: "/img/upce_fcht.jpg",
+            imgSrc: "/image/upce_fcht.jpg",
             imgCaption: "FCHT UPCE",
             imgCaptionLink: "https://fcht.upce.cz/fcht/slchpl/historie.html",
             links: [
@@ -409,7 +409,7 @@ export default function useCards() {
             subtitle: "Vysoké učení technické v Brně",
             description: "Jsi spíš technik a vynálezce? Na Fakultě chemické VUT v Brně se chemie potkává s inženýrstvím. " +
                 "Můžeš vyvíjet a testovat třeba materiály budoucnosti – od bioplastů přes chytré nátěry až po součástky pro medicínu.",
-            imgSrc: "/img/vut.jpg",
+            imgSrc: "/image/vut.jpg",
             imgCaption: "FCH VUT, DOD a Den chemie 2024",
             imgCaptionLink: "https://www.fch.vut.cz/fakulta/fotogalerie",
             links: [
@@ -427,7 +427,7 @@ export default function useCards() {
             title: "… a mnohem víc!",
             description: "Existuje spousta menších fakult a škol, které se do přehledu nevešly, " +
                 "což ale neznamená, že nestojí za pozornost. A rozhodně se neboj přemýšlet i za hranice!",
-            imgSrc: "/img/skoly.jpg",
+            imgSrc: "/image/skoly.jpg",
             imgCaption: "Archiv VŠCHT Praha",
             imgCaptionLink: "",
             links: [

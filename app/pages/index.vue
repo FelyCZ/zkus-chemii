@@ -24,7 +24,7 @@ const { hero, sections } = useIndex()
           </UPageHero>
 
           <UPageGrid
-             class="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3"
+             class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3 xl:grid-cols-3"
 
           >
             <div

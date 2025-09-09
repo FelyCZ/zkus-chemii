@@ -47,6 +47,7 @@ function onClickMain(link: string) {
           class="w-full"
           preset="cardImage"
           :custom="true"
+          loading="lazy"
       >
           <!-- Show the actual image when loaded -->
           <div
@@ -77,7 +78,6 @@ function onClickMain(link: string) {
           <USkeleton
               v-else
               class="object-cover aspect-[3/2] rounded-md mb-4"
-              alt="skeleton během načítání"
           />
       </NuxtImg>
     </template>
