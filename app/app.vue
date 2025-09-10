@@ -37,25 +37,29 @@ const isIndexPage = computed(() => {
       <NuxtPage/>
     </UMain>
 
-    <div class="flex flex-col items-center justify-center gap-6">
+    <div class="flex flex-col items-center justify-center gap-6 bg-primary/10">
       <USeparator/>
-      <div class="grid grid-cols-1 gap-y-2 md:grid-cols-2 md:gap-y-0 justify-items-center">
+      <div class="flex flex-col md:flex-row p-0 gap-4 justify-center items-center ">
         <UButton
             to="/seznam"
             variant="link"
             icon="i-lucide-rocket"
-            color="neutral">
+            color="neutral"
+            class="md:col-span-1"
+        >
           Seznam aktivit
         </UButton>
         <UButton
             to="/kontakt"
             variant="link"
             icon="i-lucide-contact"
-            color="neutral">
+            color="neutral"
+            class="md:col-span-1"
+        >
           Kontakt
         </UButton>
       </div>
-      <div class="w-full text-center flex flex-row items-center justify-center py-4 bg-secondary/10 text-sm text-muted">
+      <div class="w-full text-center flex flex-row items-center justify-center py-4 bg-primary/10 text-sm text-muted">
         <span>
           Zdrojový kód je dostupný na
         </span>
