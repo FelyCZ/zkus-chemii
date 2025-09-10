@@ -1,7 +1,7 @@
 export default function useAboutMe() {
 
     const aboutMe = ref({
-        title: "Něco o mě",
+        title: "Něco o mně",
         bio: "Ahoj! Jmenuji se Andrea, studuji na VŠCHT v Praze a zabývám se výzkumem přírodních látek na " +
             "Ústavu organické chemie a biochemie AV ČR. Nadšenec do chemie jsem už dlouho a sama jsem se " +
             "zúčastnila mnoha chemických soutěží a akcí, které se ti teď snažím představit. " +
