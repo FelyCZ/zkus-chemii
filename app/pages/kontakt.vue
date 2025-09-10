@@ -12,8 +12,11 @@ const { aboutMe } = useAboutMe()
           orientation="horizontal"
           reverse
           :ui="{
-            root: '',
-            container: 'flex-col !justify-center items-center p-8',
+            root: 'mx-8',
+            container: '!justify-center items-center lg:p-8 py-12 lg:py-44 lg:grid-cols-10',
+            title: 'text-center lg:text-left',
+            description: 'text-justify lg:pe-8',
+            wrapper: 'lg:col-span-6',
             links: 'justify-center lg:justify-start',
           }"
           :links="aboutMe.links"
@@ -24,7 +27,7 @@ const { aboutMe } = useAboutMe()
             preset="cardImage"
             :custom="true"
             loading="lazy"
-            class="w-[70%] self-center"
+            class="w-[70%] justify-self-center lg:col-span-4"
         >
           <!-- Show the actual image when loaded -->
           <img
